@@ -46,8 +46,15 @@ const Home = () => {
         readData();
     }, []);
     return (
-        <div>
-            <div>
+        <div style={{
+            backgroundColor: "#212121",
+            width: "800px",
+            marginTop:"50px"
+        }}>
+            <div
+            style={{
+                marginTop: "50px"
+            }}>
                 <div 
                 style={{
                     width: "300px",
@@ -68,6 +75,7 @@ const Home = () => {
                     <Button
                     style={{
                         marginLeft: "10px",
+                        borderRadius: "10px"
                     }}
                     onClick={()=>{
                         handleClick();
@@ -116,6 +124,9 @@ const Home = () => {
             </div>
             <div> {memory} </div>
               <Button
+              style={{
+                  borderRadius: "10px"
+              }}
                 onClick={() => {
                   deleteThumbs(id);
                 }}
